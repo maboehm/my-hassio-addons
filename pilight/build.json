@@ -1,0 +1,6 @@
+{
+  "build_from": {
+    "armhf": "balenalib/rpi-raspbian:stretch",
+    "armv7": "balenalib/rpi-raspbian:stretch"
+  }
+}

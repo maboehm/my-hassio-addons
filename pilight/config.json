@@ -1,0 +1,25 @@
+{
+    "arch": ["armv7", "armhf"],
+    "name": "pilight",
+    "version": "0.2.5", 
+    "slug": "pilight",
+    "description": "Pilight server",
+    "startup": "services",
+    "boot": "auto",
+    "devices": ["/dev/mem:/dev/mem:rw"],
+    "options": {
+      "sender": 0,
+      "receiver": -1
+    },
+    "schema": {
+      "sender": "int",
+      "receiver": "int"
+    },
+    "privileged": ["SYS_RAWIO"],
+    "gpio": "true",
+    "webui": "http://[HOST]:[PORT:5001]",
+    "ports": {
+      "5000/tcp": 5000,
+      "5001/tcp": 5001
+    }
+  }

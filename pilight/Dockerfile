@@ -8,8 +8,8 @@ RUN	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys \
 	&& echo "deb http://apt.pilight.org/ stable main" > /etc/apt/sources.list.d/pilight.list \
 	&& apt-get update \
 	&& apt-get install -y \
-		pilight=8.0.2 \
-		pilight-webgui=8.0 \
+		pilight \
+		pilight-webgui \
 		jq \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*

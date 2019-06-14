@@ -1,12 +1,13 @@
 {
     "arch": ["armv7", "armhf"],
     "name": "pilight",
-    "version": "0.2.5", 
+    "version": "0.2.6", 
     "slug": "pilight",
     "description": "Pilight server",
     "startup": "services",
     "boot": "auto",
     "devices": ["/dev/mem:/dev/mem:rw"],
+    "full_access": true,
     "options": {
       "sender": 0,
       "receiver": -1

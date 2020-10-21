@@ -1,0 +1,29 @@
+{
+  "name": "Local Tuya MQTT Bridge",
+  "version": "0.0.4",
+  "slug": "local_tuya_mqtt",
+  "description": "Connect Tuya devices via mqtt.",
+  "url": "https://github.com/m2hofi94/my-hassio-addons/tree/master/tuya-mqtt",
+  "arch": [
+    "armhf",
+    "armv7",
+    "aarch64",
+    "amd64",
+    "i386"
+  ],
+  "startup": "application",
+  "boot": "auto",
+  "services": [
+    "mqtt:want"
+  ],
+  "options": {
+    "log_level": "debug",
+    "discover_mqtt_broker": true,
+    "tuya_mqtt_config": {
+      "topic": "tuya/",
+      "qos": 2
+    },
+    "tuya_mqtt_devices": null
+  },
+  "schema": false
+}

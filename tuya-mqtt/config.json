@@ -22,5 +22,5 @@
     "tuya_mqtt_devices": null
   },
   "schema": false,
-  "image": "m2hofi94/{arch}-hassio-mqtt-tuya"
+  "image": "m2hofi94/{arch}-hassio-tuya-mqtt"
 }

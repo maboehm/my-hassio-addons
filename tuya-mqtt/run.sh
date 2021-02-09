@@ -2,6 +2,8 @@
 
 set -e
 
+CONFIG_PATH=/data/options.json
+
 bashio::log.level "$(bashio::config 'log_level')"
 
 config="$(bashio::config 'tuya_mqtt_config')"

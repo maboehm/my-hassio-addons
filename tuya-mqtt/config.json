@@ -1,6 +1,6 @@
 {
   "name": "Local Tuya MQTT Bridge",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "slug": "local_tuya_mqtt",
   "description": "Connect Tuya devices via mqtt.",
   "url": "https://github.com/m2hofi94/my-hassio-addons/tree/master/tuya-mqtt",
@@ -21,6 +21,23 @@
     },
     "tuya_mqtt_devices": null
   },
-  "schema": false,
+  "schema": {
+    "log_level": "str",
+    "discover_mqtt_broker": "bool",
+    "tuya_mqtt_config": {
+      "topic": "str",
+      "qos": "int"
+    },
+    "tuya_mqtt_devices": [
+      {
+        "name": "str",
+        "id": "str",
+        "key": "str",
+        "ip": "str",
+        "version": "str",
+        "type": "str"
+      }
+    ]
+  },
   "image": "m2hofi94/{arch}-hassio-tuya-mqtt"
 }

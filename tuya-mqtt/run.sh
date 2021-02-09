@@ -1,4 +1,5 @@
-#!/usr/bin/with-contenv bashio
+#!/usr/bin/env bashio
+
 set -e
 
 bashio::log.level "$(bashio::config 'log_level')"

@@ -16,4 +16,4 @@ COPY src/ .
 COPY run.sh .
 
 CMD ["./run.sh"]
-LABEL io.hass.version="0.0.5" io.hass.type="addon" io.hass.arch="aarch64"
+LABEL io.hass.version="0.1.0" io.hass.type="addon" io.hass.arch="aarch64"
